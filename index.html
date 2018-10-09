@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Rock, Paper, Scissors</title>
+<!--jquery-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--firebase-->
+        <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+        
+        <link href="assets/style.css" rel="stylesheet">
+
+          
+          
+    </head>
+
+    <!-- -create firebase app
+        -create rock, paper, scissors buttons
+        -on click function: store user choice, 
+                            compare users choices, 
+                            determine winner
+        -create user 1 and user 2 
+        -display score 
+        -create chat box
+    -->
+<body>
+    <!--
+<div id="container">
+    <input id="textEmail" type="email" placeholder="email">
+
+    <input id="textPassword" type="password" placeholder="password">
+
+    <button id="loginButton" class="button button-action">
+        Log in
+    </button>
+
+    <button id="signUpButton" class="button button-action hide">
+        sign up
+    </button>
+
+    <button id="logOutButton" class="button button-action hide">
+        Log out
+    </button>
+
+</div> !-->
+
+<div id="mainTitle">
+    <h1>ROCK, PAPER, SCISSORS</h1>
+
+    <h2 id="displayWinner"></h2>
+</div>
+
+<div id="playerOneDisplay">
+    <h2>PLAYER ONE</h2>
+    <h4 id="playerOneWins"> </h4>
+    <h4 id="playerOneLosses"> </h4>
+
+    <h4 id="winLossOne"> </h4>
+</div>
+
+<div id="rpsButtons">
+    <button class="rockButton button">Rock</button>
+    <button class="paperButton button">Paper</button>
+    <button class="scissorsButton button">Scissors</button>
+    
+</div>
+
+<div id="playerTwoDisplay">
+    <h2> PLAYER TWO</h2>
+    <h4 id="playerTwoWins"></h4>
+    <h4 id="playerTwoLosses"></h4>
+    <h4 id="winLossTwo"></h4>
+</div>
+
+<div id="chatBox"></div>
+
+
+</body>
+
+<script src="assets/game2.js" type="text/javascript"></script>
+</html>
